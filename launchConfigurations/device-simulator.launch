@@ -1,25 +1,14 @@
 {
-    "Params": {
-        "DevMode": {
-            "Instrumentation": {
-                "command": "",
-                "env": {
-                    "BLUEMIX_APP_MGMT_ENABLE": "devconsole+shell+inspector",
-                    "NODE_ENV": "development"
-                },
-                "memory": "256M"
-            },
-            "Packager": "com.ibm.perfectstorm.cloudoe.packager.LiveEditDeploymentPackager"
-        },
-        "Name": "device-simulator",
-        "Target": {
-            "Org": "strachowski@ch.ibm.com",
-            "Space": "PostGrid-Edu",
-            "Url": "https://api.eu-gb.bluemix.net"
-        },
-        "Timeout": 60
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.eu-gb.bluemix.net",
+      "Org": "strachowski@ch.ibm.com",
+      "Space": "PostGrid-Edu"
     },
-    "Path": "",
-    "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
-    "Type": "Cloud Foundry"
+    "Name": "device-simulator",
+    "Instrumentation": {}
+  },
+  "Path": "",
+  "Type": "Cloud Foundry"
 }

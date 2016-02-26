@@ -124,7 +124,8 @@ iotfClient.on("connect", function () {
             "pressure" : 50
         }
     };
-
+	var up = true;
+	var temperatureIncrement = 2;
 
     //--loop forever------------------------------------------------------------
 
@@ -142,12 +143,16 @@ iotfClient.on("connect", function () {
         //
         // increment temperature up to 100 then back down to 0
         //
+        if (dataPacket.d.temperature === 100) {
+        	up = false;
+        }
         if (dataPacket.d.temperature === 0) {
-            var countingUp = true;
-            var temperatureIncrement = 2;
-        } else if (dataPacket.d.temperature === 100) {
-            var countingUp = false;
-            var temperatureIncrement = -2;
+        	up = true;
+        }
+        if (up === true) {
+            temperatureIncrement = 2;
+        } else {
+            temperatureIncrement = -2;
         }
         dataPacket.d.temperature = dataPacket.d.temperature + temperatureIncrement;
 
