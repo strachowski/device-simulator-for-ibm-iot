@@ -6,6 +6,10 @@ This is a heavily commented node.js application, that acts as a "fake device", c
 
 For a full specification of the payload, see the IBM IoT Platform docs, specifically the [MQTT Connectivity for Devices section][iotf_messaging_doc].
 
+Give it a try! Click the button below to fork into IBM DevOps Services and deploy your own copy of this application on Bluemix.
+
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/strachowski/device-simulator-for-ibm-iot.git)
+
 
 ### Registering the simulator in the IBM IoT Platform service
 
