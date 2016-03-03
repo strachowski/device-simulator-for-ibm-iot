@@ -1,9 +1,8 @@
 ---
 applications:
 - path: .
-  memory: 256M
+  memory: 64M
   instances: 1
-  domain: eu-gb.mybluemix.net
   name: device-simulator
   host: device-simulator
   disk_quota: 1024M

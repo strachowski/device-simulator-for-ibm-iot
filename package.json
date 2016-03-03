@@ -21,6 +21,10 @@
   ],
   "author": [
     {
+      "name": "Roman Strachowski",
+      "email": "strachowski@ch.ibm.com"
+    },
+    {
       "name": "Uwe Fassnacht",
       "email": "uwe.fassnacht@de.ibm.com"
     }
